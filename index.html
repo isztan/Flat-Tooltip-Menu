@@ -8,31 +8,31 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-	<div class="container">
-		<h1>Flat Tooltip Menu using jQuery</h1>
-		<p>by <a href="http://timothy-long.com">Timothy Long</a></p>
-		<div class="dropdown">
-	        <a class="dropdown-toggle" href="#">Projects</a>
-	        <ul class="dropdown-menu">
-	            <li><a href="#">Latest Project Updates</a></li>
-	            <li><a href="#">Discussions</a></li>
-	            <li><a href="#">To-Do Lists</a></li>
-	            <li><a href="#">Files</a></li>
-	            <li><a href="#">View All Projects</a></li>
-	        </ul>
-	    </div>
+<div class="container">
+	<h1>Flat Tooltip Menu using jQuery</h1>
+	<p>by <a href="http://timothy-long.com">Timothy Long</a></p>
+	<div class="dropdown">
+		<a class="dropdown-toggle" href="#">Projects</a>
+		<ul class="dropdown-menu">
+		    <li><a href="#">Latest Project Updates</a></li>
+		    <li><a href="#">Discussions</a></li>
+		    <li><a href="#">To-Do Lists</a></li>
+		    <li><a href="#">Files</a></li>
+		    <li><a href="#">View All Projects</a></li>
+		</ul>
 	</div>
-	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-	<script type="text/javascript">
-        $(".dropdown-toggle").click(function() {
-	        $(".dropdown").toggleClass("open");
-	    });
-	    $('html').click(function() {
-	        $(".dropdown").removeClass("open");
-	    });
-	    $('.dropdown').click(function(event){
-	        event.stopPropagation();
-	    });
-    </script>
+</div>
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script type="text/javascript">
+	$(".dropdown-toggle").click(function() {
+		$(".dropdown").toggleClass("open");
+	});
+	$('html').click(function() {
+		$(".dropdown").removeClass("open");
+	});
+	$('.dropdown').click(function(event){
+		event.stopPropagation();
+	});
+</script>
 </body>
 </html>
